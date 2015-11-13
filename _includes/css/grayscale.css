@@ -544,3 +544,7 @@ img {
     height: 100%;
     vertical-align: middle;
 }
+
+.datapage-img {
+    width: 200px;
+}
