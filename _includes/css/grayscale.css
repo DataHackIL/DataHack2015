@@ -534,3 +534,13 @@ a.register-link {
 .data-table {
     padding-top: 20px;
 }
+
+img {
+    vertical-align: middle;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
