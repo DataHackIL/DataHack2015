@@ -1,0 +1,73 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,900' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/img/favicon.png?">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-68413266-1', 'auto');
+          ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <div align="center">
+      <img src="../img/logos/for_challenges/small_logo.png" class="brand-image" alt="Logo">
+    </div>
+    <div align="center">
+        <h1> Data Challenges by Sponsors</h1>
+        <h3> Here are some of the challenges that our sponsors you can choose to tackle during the event:</h3>
+    </div>
+    <div class="container">
+
+        <!-- ROW -->
+         <div class="row data-table">
+           <div class="col-md-3"></div>
+            <div class="col-md-6 text-dark" align="center">
+                <img class="ebay-logo" src="../img/logos/for_challenges/logo_ebay.png" alt="ebay" style="display:block;margin:auto;margin-bottom:1cm;">
+                <div class="left-text-column ">
+                <p align="justify">
+                Item clustering - eBay is very flexible on the data it requires the sellers to provide. Upon listing, the seller provides a short title of what he sells, some optional domain specific specifications (like screen size for TV’s, color for fashion or clarity for diamonds), and a category, an image and an HTML formed description. With that data we would like to cluster the items to groups which represent the same real world products. <br>
+
+                Query description – One of the ways to navigate through ebay’s inventory is by browsing the category tree and then restricting it by certain attributes (from the kind I described above). Each combination of category and aspects is actually a query (for example category =digital cameras, brand = sony, type =dslr, with lens = yes ). We would like to produce a natural language description for this query (“Sony DSLR Cameras with Lens”). We will provide one version in English and one version in German.<br>
+
+                Category recommendation – When a seller lists something on ebay, he has to provide a category. eBay assists him by suggesting a category based on the short title the seller provides. However, due to the very large number of categories and some ambiguity we have in the category tree, this suggestion can be difficult. In this challenge, we will provide a big dataset of item titles with they’re corresponding categories. The challenge will be to classify a test set of titles to they’re correct category.
+                </p>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row" align="center">
+            <div class="col-md-12 text-center">
+                <img class="co-host-separator" src="../img/logos/long_line.png">
+                <br>
+            </div>
+        </div>
+        
+    <br><br><br><br>
+    <div align="center">
+      <h3> More coming soon... </h3>
+    </div>
+    <br><br>
+</body>
