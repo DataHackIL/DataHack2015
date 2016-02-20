@@ -1,0 +1,184 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,900' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/img/favicon.png?">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-68413266-1', 'auto');
+          ga('send', 'pageview');
+    </script>
+</head>
+<body>
+    <div align="center">
+      <img src="../img/logos/for_challenges/small_logo.png" class="brand-image" alt="Logo">
+    </div>
+    <div align="center">
+        <h1> Data Challenges by Sponsors</h1>
+        <h3> Here are some of the challenges you can choose to tackle during the event:</h3>
+        <br><br><br>
+    </div>
+    <div class="container">
+
+        <!-- ROW -->
+         <div class="row data-table">
+           <div class="col-md-3"></div>
+            <div class="col-md-6 text-dark" align="center">
+                <img class="ebay-logo" src="../img/logos/for_challenges/logo_ebay_medium.png" alt="ebay" style="display:block;margin:auto;margin-bottom:1cm;">
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+           <div class="row data-table">
+
+            <div class="col-md-6 text-dark" align="center">
+
+              <p align="justify"> <b>Query description</b> – One of the ways to navigate through ebay’s inventory is by browsing the category tree and then restricting it by certain attributes (from the kind I described above). Each combination of category and aspects is actually a query (for example category =digital cameras, brand = sony, type =dslr, with lens = yes ). We would like to produce a natural language description for this query (“Sony DSLR Cameras with Lens”). We will provide one version in English and one version in German.</p>
+              <p align="justify"> <b>Category recommendation</b> – When a seller lists something on ebay, he has to provide a category. eBay assists him by suggesting a category based on the short title the seller provides. However, due to the very large number of categories and some ambiguity we have in the category tree, this suggestion can be difficult. In this challenge, we will provide a big dataset of item titles with they’re corresponding categories. The challenge will be to classify a test set of titles to they’re correct category.</p>
+              <p align="justify"> <b>Matching quality score</b> – For managing its vast inventory, eBay has created a large platform of catalogs and classifies it’s listings to cataloged products.  In this challenge we ask you to predict whether the matching of a listing to a product is correct. We will provide a medium sized sample of pairs of matchings between a listing and a product, with various information about both the item and the product – things like free text titles, item’s domain, seller information and some of our internal algorithms outputs. The goal here is to predict whether the item matches the product or not.</p>
+            </div>
+
+            <div class="col-md-6 text-dark" align="center">
+              <p align="justify"> <b>Item clustering</b> - eBay is very flexible on the data it requires the sellers to provide. Upon listing, the seller provides a short title of what he sells, some optional domain specific specifications (like screen size for TV’s, color for fashion or clarity for diamonds), and a category, an image and an HTML formed description. With that data we would like to cluster the items to groups which represent the same real world products. </p>
+              <p align="justify"> <b>Image selection</b> – Providing a good image is a key factor in selling on eBay. A good image should be clear, without watermarks, with the object in the center, hopefully with white background and so on. In this challenge we will provide groups of items with they’re corresponding images. For each group we would like to get the best image. If the participants want to modify/correct/synthesize an image, this can be even cooler. :)</p>
+              <p align="justify"> <b>NV extraction</b> – Metadata enables a variety of backend processes as well as improves the user experience on eBay. However, due to the huge variety of eBay’s inventory, both collecting and extracting the metadata is a big challenge. We will provide a dataset from a small subset of domains, where for each domain we provide a set of item titles and a dictionary of metadata values. Here we ask to extract the correct value from the title and potentially to enrich the dictionary. As an example we may provide a dataset of TV’s and a dictionary of brands and models, where the goal will be to tag each listing with a brand and model from the dictionary or potentially identify new brands that are absent.</p>
+              <br><br><br>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row" align="center">
+            <div class="col-md-12 text-center">
+                <img class="co-host-separator" src="../img/logos/long_line.png">
+                <br><br><br>
+            </div>
+        </div>
+
+       <!-- ROW -->
+       <div class="row data-table">
+         <div class="col-md-3"></div>
+          <div class="col-md-6 text-dark" align="center">
+              <img class="ebay-logo" src="../img/logos/logo_outbrain.png" alt="outbrain" style="display:block;margin:auto;margin-bottom:1cm;">
+
+              <p align="justify"> Given two users and two articles, can you tell what user read which article? Using obfuscated data extracted from Outbrain databases, participants are expected to build models and combine them to achieve the best predictor. The data contains selected features of all relevant articles, and a set of article viewing events by various users including page referrals. </p>
+              <br><br><br>
+          </div>
+          <div class="col-md-3"></div>
+      </div>
+
+      <div class="row" align="center">
+          <div class="col-md-12 text-center">
+              <img class="co-host-separator" src="../img/logos/long_line.png">
+              <br><br><br>
+          </div>
+      </div>
+
+     <!-- ROW -->
+     <div class="row data-table">
+       <div class="col-md-3"></div>
+        <div class="col-md-6 text-dark" align="center">
+            <img class="ebay-logo" src="../img/logos/logo_similarweb.png" alt="Similarweb" style="display:block;margin:auto;margin-bottom:1cm;">
+
+            <p align="justify"> Given a learning set of tagged websites and any other data (for example SimilarWeb API) predict a category for the website from a fixed taxonomy. </p>
+            <br><br><br>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+    <div class="row" align="center">
+        <div class="col-md-12 text-center">
+            <img class="co-host-separator" src="../img/logos/long_line.png">
+            <br><br><br>
+        </div>
+    </div>
+<!--
+
+       <div class="row data-table">
+         <div class="col-md-3"></div>
+          <div class="col-md-6 text-dark" align="center">
+              <img class="ebay-logo" src="../img/logos/logo_neura.png" alt="outbrain" style="display:block;margin:auto;margin-bottom:1cm;">
+
+              <p align="justify"> Behavioral Signature
+For security applications, identifying human behavior is a growing valuable way to prevent technological theft, especially when users own IoT devices that track their private data, drive their cars and control their door lock. Instead of identifying a human behavior without context, using a limited set of mathematical metrics, analyzing it with context such as where, when, and with who uncover the special behavior of each user. Using this behavioral signature, users’ that own IoT devices can be more confident that their devices are secure.
+A dataset of at least 50 anonymized Neura users is provided together with their recorded mobile sensors data during at least 2 months’ period. The intent of this challenge is to develop a behavioral signature that identifies the user behavior at home. Part of the challenge is to decide which features should be calculated. Data set enables to calculated multiple features. For example, how much time does a user stay at home? When does he charge his phone? How much time does he use his phone? Etc.</p>
+			  <p align="justify"> For this challenge, participants must come up with a "behavioral signature" capable of distinguishing between different users. The features of this behavioral signature could help security application protect their users.
+</p>
+			  <p align="justify"> Neura brings human context to the Internet of things, enabling personalization of products and services based on better understanding of the human behind the machine.  </p>
+
+			  <p align="justify">A detailed description available <a href= https://drive.google.com/file/d/0B_WCK0pkekCqM290eWJpTFdhWE0/view?usp=sharing>here</a>. </p>
+
+			  <br><br><br>
+          </div>
+          <div class="col-md-3"></div>
+      </div>
+
+      <div class="row" align="center">
+          <div class="col-md-12 text-center">
+              <img class="co-host-separator" src="../img/logos/long_line.png">
+              <br><br><br>
+          </div>
+      </div>
+    -->
+
+     <!-- ROW -->
+     <div class="row data-table">
+       <div class="col-md-3"></div>
+        <div class="col-md-6 text-dark" align="center">
+            <img class="ebay-logo" src="../img/logos/logo_wix.png" alt="wix" style="display:block;margin:auto;margin-bottom:1cm;">
+            <p align="justify"> The Wix platform allows users to build their own websites and publish them.  We provide the text of those sites in a format close to the original one.  For each site we give you a categorization of that site. Using the text content data, build a model using ML / NLP that will categorize the sites.  This model will be expected to work on unseen data.  The best result for the unseen set wins!</p>
+			<p align="justify">We have millions of published sites and categorizing them is extremely useful for the direction of the development of our business strategy.  But we don't really know what is on our users' sites. We do not force them to tell us what their site is, and even where it is optional the user may not be classifying the site correctly or accurately. </p>
+			<p align="justify">The data that we provide will have 4 columns, an identifier of the site, a site url, the category that we have classified the site, and the site text.  These sites are already known to us.  The goal is to build a model that can take the text for a site and classify it accurately.  We will hold back an additional data set (that we will not supply the categories for) that must be categorized by the model.  We know what the results should be so we can measure the accuracy of the unseen list.  The best result will win our challenge.  We will set a threshold that should someone break it they will receive an additional prize from us.</p>
+			<p align="justify">We do not care how the teams build the classification model but it should be based on the text content of the site.</p>
+			
+
+			<p align="justify">The task involves a number of aspects.<br>
+
+
+
+			-  How well the site text understood or parsed using NLP or otherwise.<br>
+			-  Accurately a site can be classified.<br>
+			-  How efficiently it can be done.<br>
+
+			</p>
+			<p align="justify">
+			We would also be interested in other entries that use the data in some other interesting way.</p>
+
+
+		  <p align="justify">The data, a usage explanation and a list of default string are <a href="https://drive.google.com/folderview?id=0BwRdpuTGNHpZcV9kVHJzcXVqbWM&usp=sharing">here</a>.</p> 
+
+            <br><br><br>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <div align="center">
+    <a href="../" class="btn btn-primary btn-lg active" role="button">Back to main page</a>
+  </div>
+
+  <br><br>
+</body>
