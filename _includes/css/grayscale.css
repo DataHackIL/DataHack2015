@@ -461,6 +461,12 @@ h2.about-title {
     width: 100%;
 }
 
+.color-darkblue {
+    background-color: #002836;
+    color : #002836;
+    width: 100%;
+}
+
 .text-light {
     color: #fff;
 }
