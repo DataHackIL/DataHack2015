@@ -34,7 +34,7 @@
             var row = document.getElementById("positionsTable").rows;
             var rC = row.length;
             var tBody = row[0].parentNode;
-            for(i=0;i<rC;i++){
+            for(i=1;i<rC;i++){
               tBody.insertBefore(row[Math.ceil(Math.random()*(rC-1))],row[i]);
             }
           }
@@ -46,17 +46,16 @@
     <img src="../img/logos/for_challenges/small_logo.png" class="brand-image" alt="Logo">
   </div>
   <div align="center">
-      <h1> The Jobs Page!</h1> <br><br>
-
-      <h3> Coming soon... </h3> <br><br>
+      <h1> The Jobs Page!</h1> <br>
+      <!--<h3> Coming soon... </h3> <br><br> -->
   </div>
 
-  <section id="jobs_description" class="container content-section text-center color-navyblue">
+  <section id="jobs_description" class="container content-section text-center color-white">
 
       <div class="row" align="justify">
           <div class="col-md-3">
           </div>
-          <div class="col-md-6 text-light">
+          <div class="col-md-6 text-dark">
 
             <p>We get a lot of questions from friends and participants about job hunting in the data science field. While we have no intention of becoming an HR firm, we thought a single page with a simple table would be a nice service for the community.</p>
 
@@ -84,15 +83,20 @@
 
         <div class="col-md-8 text-dark">
 
-          <table id="headers">
+          <!-- <table id="headers">
             <tr>
               <td>Company</td>
               <td>Position</td>
               <td>Description</td>
             </tr>
-          </table>
+          </table> -->
 
           <table id="positionsTable">
+            <tr>
+              <td>Company</td>
+              <td>Position</td>
+              <td>Description</td>
+            </tr>
             <tr>
               <td>Mobileye</td>
               <td>Algorithms Developer</td>
