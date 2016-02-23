@@ -31,7 +31,7 @@
           ga('send', 'pageview');
 
           function swapRows(){
-            var row = document.getElementById("myTab").rows;
+            var row = document.getElementById("positionsTable").rows;
             var rC = row.length;
             var tBody = row[0].parentNode;
             for(i=0;i<rC;i++){
@@ -46,8 +46,10 @@
       <img src="../img/logos/for_challenges/small_logo.png" class="brand-image" alt="Logo">
     </div>
     <div align="center">
-        <h1> Data Challenges by Sponsors</h1>
-        <h3> Here are some of the challenges you can choose to tackle during the event:</h3>
+        <h1> The Jobs Page!</h1>
+        <h3> We get a lot of questions from friends and participants about job hunting in the data science field. While we have no intention of becoming an HR firm, we thought a single page with a simple table would be a nice service for the community.<h3>
+
+          Want to post a position to the page? Mail the company name (no anonymous posts) - which might incorporate a link the a jobs page, mail-to link for applications or just the company's website - the name of the position ("Data Scientist", "Machine Learning Research Expert", etc.), and a short description of the position (up to 350 characters; we inforce that) to <a href="mailto:jobspage@datahack-il.com">mentor@datahack-il.com</a>. Only data.
         <br><br><br>
     </div>
 
@@ -59,7 +61,7 @@
       </tr>
     </table>
 
-    <table id="myTab">
+    <table id="positionsTable">
       <tr>
         <td>Mobileye</td>
         <td>Algorithms Developer</td>
