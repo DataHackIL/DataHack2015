@@ -1,0 +1,90 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,900' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/img/favicon.png?">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-68413266-1', 'auto');
+          ga('send', 'pageview');
+
+          function swapRows(){
+            var row = document.getElementById("myTab").rows;
+            var rC = row.length;
+            var tBody = row[0].parentNode;
+            for(i=0;i<rC;i++){
+              tBody.insertBefore(row[Math.ceil(Math.random()*(rC-1))],row[i]);
+            }
+          }
+          window.onload=swapRows;
+    </script>
+</head>
+<body>
+    <div align="center">
+      <img src="../img/logos/for_challenges/small_logo.png" class="brand-image" alt="Logo">
+    </div>
+    <div align="center">
+        <h1> Data Challenges by Sponsors</h1>
+        <h3> Here are some of the challenges you can choose to tackle during the event:</h3>
+        <br><br><br>
+    </div>
+
+    <table id="headers">
+      <tr>
+        <td>Company</td>
+        <td>Position</td>
+        <td>Description</td>
+      </tr>
+    </table>
+
+    <table id="myTab">
+      <tr>
+        <td>Mobileye</td>
+        <td>Algorithms Developer</td>
+        <td>As part of our algorithmic group, you will be exposed to innovative areas of practice and interact with top experts in the field of Computer Vision and Machine Learning. Work includes development of advanced algorithms in the fields of Image Processing, Computer Vision, Machine Learning, System Design and coding for a Real-Time environment in C++.</td>
+      </tr>
+      <tr>
+        <td>Prize4Life</td>
+        <td>Data Scientist</td>
+        <td>Prize4Life is looking for a data scientist with vast experience in machine learning to explore, analyze and identify features in a unique and variable dataset from ALS patients. The candidate can be a grad student with hands-on experience in machine learning or deep learning models with variable datasets (structured/unstructured, images, audio).</td>
+      </tr>
+      <tr>
+        <td>Lightricks</td>
+        <td>Data Scientist</td>
+        <td>Our Analytics team engages with aspects from usage analytics to modelling and optimisation of advertisement and convergence rates. As a Data Fiend in the team you will work with real-wrold data, large & dirty datasets, online and offline algorithms. You should have a strong statistical background and be able to build robust models and give accurate and actionable conclusions.</td>
+      </tr>
+      <tr>
+        <td>Neura</td>
+        <td>Data Scientist</td>
+        <td>You’re responsible for data models in our Machine-Learning focused engine. You love bringing creative flair to complex challenges (we have a lot of those), and you’re pretty handy with cutting code. You’ll be expected to lead data collection requirements, improve detection and prediction models accuracy and implement new features and models.</td>
+      </tr>
+    </table>
+
+  <div align="center">
+    <a href="../" class="btn btn-primary btn-lg active" role="button">Back to the site</a>
+  </div>
+
+  <br><br>
+</body>
