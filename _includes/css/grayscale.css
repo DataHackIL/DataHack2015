@@ -555,3 +555,11 @@ img {
 .datapage-img {
     width: 200px;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
