@@ -570,9 +570,17 @@ table {
    vertical-align: middle;
 }
 
-th, td {
+th {
   border: 1px solid black;
    font-size:14pt;
    text-align: center;
+   vertical-align: middle;
+}
+
+
+td {
+  border: 1px solid black;
+   font-size:12pt;
+   /*text-align: center;*/
    vertical-align: middle;
 }
