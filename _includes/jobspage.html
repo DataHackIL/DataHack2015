@@ -1,10 +1,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    
+    <title>The DataHack Jobs Page</title>
+    <meta name="description" content="With the growing demand for data scientists and machine learning experts, looking for a job in the field while keeping track of the numerous relevant positions can be hard. That's why we figured we could help each other out, and set up this simple jobs page for those data scientists on the lookout." />
+    <link rel="image_src" href="img/datahack_jobs.png" / >
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
