@@ -74,7 +74,7 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 650;
+    font-weight: 700;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -82,8 +82,8 @@ a:focus {
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
-    padding: 3px 3px;
-    font-size: 15px;
+    padding: 4px 6px;
+    font-size: 16px;
     color: #fff;
 }
 
